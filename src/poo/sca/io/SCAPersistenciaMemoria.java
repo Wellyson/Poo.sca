@@ -17,24 +17,24 @@ public class SCAPersistenciaMemoria implements SCAPersistencia{
 	
 	
 	@Override
-	public void salvar(Disciplina disciplina) {
+	public void salvar(Disciplina disciplina) throws SCAPersistenciaException{
 		this.disciplina.add(disciplina);
 		
 	}
 	
 	@Override
-	public ArrayList<Disciplina> recuperarDisciplina() {
+	public ArrayList<Disciplina> recuperarDisciplina() throws SCAPersistenciaException{
 		return this.disciplina;
 	}
 	
 	
 	@Override
-	public void salvar(Turma t) {
+	public void salvar(Turma t) throws SCAPersistenciaException{
 		this.turma.add(t);
 		
 	}
 	@Override
-	public ArrayList<Turma> recuperarTurma() {
+	public ArrayList<Turma> recuperarTurma() throws SCAPersistenciaException{
 		return this.turma;
 	}
 	
@@ -72,21 +72,21 @@ public class SCAPersistenciaMemoria implements SCAPersistencia{
 		
 	
 	@Override
-	public void salva(Professor p) {
+	public void salva(Professor p) throws SCAPersistenciaException{
 		this.professor.add(p);
 		
 	}
 	@Override
-	public ArrayList<Professor> recuperarProfessor() {
+	public ArrayList<Professor> recuperarProfessor() throws SCAPersistenciaException{
 		return this.professor;
 	}
 	@Override
-	public void salvar(Curso c) {
+	public void salvar(Curso c) throws SCAPersistenciaException{
 		this.curso.add(c);
 		
 	}
 	@Override
-	public ArrayList<Curso> recuperarCurso() {
+	public ArrayList<Curso> recuperarCurso() throws SCAPersistenciaException{
 		return this.curso;
 	}
 		
